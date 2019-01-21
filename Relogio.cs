@@ -14,5 +14,9 @@ namespace ProgramaTeste
             Console.WriteLine("Acionado construtor Relogio");
         }
 
+        public override double CalculaPrecoVenda(double markup)
+        {
+            return PrecoVenda = (PrecoCompra * markup) + 80;
+        }
     }
 }

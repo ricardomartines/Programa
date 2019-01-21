@@ -13,5 +13,9 @@ namespace ProgramaTeste
             Console.WriteLine("Acionando construtor Fone");
         }
 
+        public override double CalculaPrecoVenda(double markup)
+        {
+            return PrecoVenda = (PrecoCompra * markup) + 20;
+        }
     }
 }

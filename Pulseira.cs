@@ -13,5 +13,10 @@ namespace ProgramaTeste
         {
             Console.WriteLine("Acionado construtor Pulseira");
         }
+
+        public override double CalculaPrecoVenda(double markup)
+        {
+            return PrecoVenda = (PrecoCompra * markup) + 40;
+        }
     }
 }

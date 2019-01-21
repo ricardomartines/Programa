@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgramaTeste
 {
-    public class Produto
+    public  abstract class Produto
     {
         public string Nome { get; set; }
         public double PrecoCompra { get; private set; }
@@ -20,10 +20,7 @@ namespace ProgramaTeste
             PrecoCompra = precoCompra;
         }
 
-        public double CalculaPrecoVenda(double markup)
-        {
-            return PrecoVenda = PrecoCompra + (PrecoCompra * markup);
-        }
+        public abstract double CalculaPrecoVenda(double markup);
         
 
     }
